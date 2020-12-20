@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="RegistrationSuite" >
+<parameter name="user"  value="amit"/>
+<parameter name="password"  value="Amit123"/>
+<parameter name="user2"  value="amit"/>
+<parameter name="password2"  value="Amit123"/>
+	<test name="RegisterUserTests">
+	 <groups>
+	    <run>
+	      <include name="sanity"/>
+	      <exclude name="newfeature"/> 
+	    </run>
+	  </groups>  
+	  <classes>
+	   	<class name="frm.testng.TestNG1"/>
+	    <class name="frm.testng.TestNG2"/>
+	  </classes>
+	</test>
+</suite>
